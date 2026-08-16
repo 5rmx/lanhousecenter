@@ -1,1904 +1,1083 @@
-/* =========================================================
-   LAN HOUSE CENTER
-   DESIGN PROFISSIONAL
-========================================================= */
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ================= RESET ================= */
+    <meta name="description"
+        content="Lan House Center — serviços digitais, impressões, contratos, artes gráficas e muito mais em Mossoró-RN.">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta name="theme-color" content="#0b0b0b">
 
-html {
-    scroll-behavior: smooth;
-}
+    <title>Lan House Center | Mossoró - RN</title>
 
-body {
-    font-family: "DM Sans", sans-serif;
-    background: #f7f7f5;
-    color: #161616;
-    overflow-x: hidden;
-}
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Russo+One&display=swap"
+        rel="stylesheet">
 
-button {
-    font-family: inherit;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-img {
-    max-width: 100%;
-    display: block;
-}
+<body>
 
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-/* ================= VARIÁVEIS ================= */
+    <header class="header" id="header">
 
-:root {
+        <div class="container nav-container">
 
-    --black: #111111;
-    --dark: #181818;
-    --dark-2: #222222;
+            <!-- LOGO -->
+            <a href="#inicio" class="brand">
 
-    --white: #ffffff;
+                <div class="brand-mark">
+                    <span class="lh-l">L</span>
+                    <span class="lh-h">H</span>
+                </div>
 
-    --gray-50: #f7f7f5;
-    --gray-100: #eeeeeb;
-    --gray-200: #deded9;
-    --gray-400: #969690;
-    --gray-600: #65655f;
+                <div class="brand-text">
+                    <strong>LAN HOUSE</strong>
+                    <span>CENTER</span>
+                </div>
 
-    --accent: #e7a900;
-    --accent-dark: #c88f00;
+            </a>
 
-    --container: 1180px;
 
-}
+            <!-- MENU -->
+            <nav class="nav" id="nav">
 
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#horarios">Horários</a>
+                <a href="#localizacao">Localização</a>
 
-/* ================= CONTAINER ================= */
+            </nav>
 
-.container {
-    width: min(var(--container), calc(100% - 48px));
-    margin: 0 auto;
-}
 
+            <!-- BOTÃO -->
+            <a
+                href="https://wa.me/558497081163"
+                target="_blank"
+                rel="noopener"
+                class="header-button"
+            >
+                <span>Fale conosco</span>
+                <strong>↗</strong>
+            </a>
 
-/* ================= HEADER ================= */
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
+            <!-- MENU MOBILE -->
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    width: 100%;
+        </div>
 
-    z-index: 1000;
+    </header>
 
-    background: rgba(17, 17, 17, 0.92);
 
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    <!-- =====================================================
+         CONTEÚDO
+    ====================================================== -->
 
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    <main>
 
-    transition:
-        background .3s ease,
-        box-shadow .3s ease;
-}
 
-.header.scrolled {
-    background: rgba(17,17,17,.98);
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-    box-shadow:
-        0 12px 40px rgba(0,0,0,.22);
-}
+        <section class="hero" id="inicio">
 
-.nav-container {
-    height: 82px;
+            <div class="hero-grid"></div>
+            <div class="hero-red-glow"></div>
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+            <div class="container hero-container">
 
-    gap: 30px;
-}
+                <div class="hero-content">
 
+                    <div class="hero-label">
+                        <span></span>
+                        SERVIÇOS EM MOSSORÓ — RN
+                    </div>
 
-/* ================= LOGO ================= */
 
-.logo-link {
-    display: flex;
-    align-items: center;
+                    <h1>
+                        Soluções que
+                        <span>facilitam</span>
+                        o seu dia.
+                    </h1>
 
-    flex-shrink: 0;
-}
 
-.site-logo {
-    width: 132px;
-    height: 58px;
+                    <p>
+                        Serviços digitais, impressões, contratos,
+                        artes gráficas e muito mais. Tudo em um só lugar,
+                        com praticidade e atendimento de qualidade.
+                    </p>
 
-    object-fit: contain;
-}
 
+                    <div class="hero-buttons">
 
-/* ================= NAV ================= */
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                            class="button button-primary"
+                        >
+                            <span>Falar pelo WhatsApp</span>
+                            <strong>↗</strong>
+                        </a>
 
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 34px;
+                        <a
+                            href="#servicos"
+                            class="button button-outline"
+                        >
+                            Conhecer serviços
+                        </a>
 
-    margin-left: auto;
-}
+                    </div>
 
-.nav a {
-    color: rgba(255,255,255,.72);
 
-    font-size: 14px;
-    font-weight: 600;
+                    <div class="hero-details">
 
-    transition: color .25s ease;
-}
+                        <div>
+                            <b>✓</b>
+                            Atendimento presencial
+                        </div>
 
-.nav a:hover {
-    color: #fff;
-}
+                        <div>
+                            <b>✓</b>
+                            Serviços variados
+                        </div>
 
+                        <div>
+                            <b>✓</b>
+                            Mossoró — RN
+                        </div>
 
-/* ================= HEADER BUTTON ================= */
+                    </div>
 
-.header-button {
-    display: flex;
-    align-items: center;
-    gap: 17px;
+                </div>
 
-    padding: 12px 17px 12px 20px;
 
-    background: #fff;
-    color: #111;
+                <!-- VISUAL DO HERO -->
 
-    border-radius: 8px;
+                <div class="hero-visual">
 
-    font-size: 13px;
-    font-weight: 700;
+                    <div class="hero-brand-card">
 
-    transition:
-        transform .25s ease,
-        background .25s ease;
-}
+                        <div class="card-lines"></div>
 
-.header-button strong {
-    font-size: 18px;
-    font-weight: 500;
-}
+                        <div class="card-top">
 
-.header-button:hover {
-    transform: translateY(-2px);
-    background: var(--accent);
-}
+                            <span>LAN HOUSE</span>
 
+                            <div class="online">
+                                <i></i>
+                                ATENDIMENTO
+                            </div>
 
-/* ================= MENU MOBILE ================= */
+                        </div>
 
-.menu-button {
-    display: none;
 
-    width: 44px;
-    height: 44px;
+                        <!-- LH GRANDE -->
+                        <div class="big-logo">
 
-    border: 0;
-    background: transparent;
+                            <div class="big-l">L</div>
+                            <div class="big-h">H</div>
 
-    cursor: pointer;
-}
+                            <div class="logo-arc arc-red"></div>
+                            <div class="logo-arc arc-white"></div>
 
-.menu-button span {
-    display: block;
+                        </div>
 
-    width: 22px;
-    height: 2px;
 
-    margin: 5px auto;
+                        <div class="card-title">
 
-    background: white;
+                            <strong>LAN HOUSE</strong>
+                            <span>CENTER</span>
 
-    transition: .25s ease;
-}
+                        </div>
 
 
-/* ================= HERO ================= */
+                        <div class="card-bottom">
 
-.hero {
-    position: relative;
+                            <div>
+                                <small>SERVIÇOS DIGITAIS</small>
+                                <strong>DESDE 2026</strong>
+                            </div>
 
-    min-height: 850px;
+                            <div class="card-arrow">
+                                ↗
+                            </div>
 
-    display: flex;
-    align-items: center;
+                        </div>
 
-    overflow: hidden;
+                    </div>
 
-    background: var(--black);
-    color: white;
 
-    padding-top: 82px;
-}
+                    <!-- MINI CARD 1 -->
 
-.hero-grid {
-    position: absolute;
-    inset: 0;
+                    <div class="floating-card floating-one">
 
-    background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+                        <div class="floating-icon">
+                            +
+                        </div>
 
-    background-size: 70px 70px;
+                        <div>
+                            <strong>+ serviços</strong>
+                            <small>e muito mais</small>
+                        </div>
 
-    mask-image: linear-gradient(
-        to bottom,
-        black,
-        transparent 85%
-    );
-}
+                    </div>
 
-.hero-glow {
-    position: absolute;
 
-    width: 600px;
-    height: 600px;
+                    <!-- MINI CARD 2 -->
 
-    right: -150px;
-    top: 80px;
+                    <div class="floating-card floating-two">
 
-    border-radius: 50%;
+                        <div class="floating-icon red">
+                            ✓
+                        </div>
 
-    background: rgba(231,169,0,.10);
+                        <div>
+                            <strong>Atendimento</strong>
+                            <small>presencial</small>
+                        </div>
 
-    filter: blur(80px);
-}
+                    </div>
 
-.hero-container {
-    position: relative;
-    z-index: 2;
+                </div>
 
-    display: grid;
-    grid-template-columns: 1.05fr .95fr;
+            </div>
 
-    align-items: center;
+        </section>
 
-    gap: 90px;
 
-    padding: 100px 0 130px;
-}
+        <!-- =================================================
+             TICKER
+        ================================================== -->
 
+        <section class="ticker">
 
-/* ================= HERO CONTENT ================= */
+            <div class="ticker-track">
 
-.hero-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+                <span>IMPRESSÕES</span>
+                <b>•</b>
 
-    margin-bottom: 28px;
+                <span>SERVIÇOS DIGITAIS</span>
+                <b>•</b>
 
-    font-size: 11px;
-    font-weight: 800;
+                <span>CONTRATOS</span>
+                <b>•</b>
 
-    letter-spacing: 1.8px;
+                <span>ARTES GRÁFICAS</span>
+                <b>•</b>
 
-    color: rgba(255,255,255,.62);
-}
+                <span>PERSONALIZADOS</span>
+                <b>•</b>
 
-.status-dot {
-    width: 7px;
-    height: 7px;
+                <span>SEGURO-DESEMPREGO</span>
+                <b>•</b>
 
-    border-radius: 50%;
+                <span>IMPRESSÕES</span>
+                <b>•</b>
 
-    background: var(--accent);
+                <span>SERVIÇOS DIGITAIS</span>
+                <b>•</b>
 
-    box-shadow:
-        0 0 0 5px rgba(231,169,0,.1);
-}
+                <span>CONTRATOS</span>
+                <b>•</b>
 
-.hero h1 {
-    max-width: 700px;
+                <span>ARTES GRÁFICAS</span>
 
-    font-family: "Montserrat", sans-serif;
+            </div>
 
-    font-size: clamp(48px, 6vw, 76px);
+        </section>
 
-    line-height: 1.01;
 
-    letter-spacing: -3.5px;
+        <!-- =================================================
+             SOBRE
+        ================================================== -->
 
-    font-weight: 800;
-}
+        <section class="about section" id="sobre">
 
-.hero h1 span {
-    color: var(--accent);
-}
+            <div class="container">
 
-.hero-content > p {
-    max-width: 610px;
+                <div class="section-top">
 
-    margin-top: 30px;
+                    <span class="section-number">01</span>
 
-    color: rgba(255,255,255,.64);
+                    <span class="section-line"></span>
 
-    font-size: 17px;
-    line-height: 1.75;
-}
+                    <span class="section-tag">
+                        SOBRE NÓS
+                    </span>
 
+                </div>
 
-/* ================= HERO BUTTONS ================= */
 
-.hero-buttons {
-    display: flex;
-    align-items: center;
-    gap: 13px;
+                <div class="about-grid">
 
-    margin-top: 38px;
-}
+                    <div class="about-title">
 
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
+                        <h2>
+                            Praticidade para
+                            <span>resolver o que você precisa.</span>
+                        </h2>
 
-    min-height: 53px;
+                    </div>
 
-    padding: 0 23px;
 
-    border-radius: 7px;
+                    <div class="about-text">
 
-    font-size: 13px;
-    font-weight: 700;
+                        <p class="large-text">
+                            A <strong>Lan House Center</strong> reúne diversos
+                            serviços em um só lugar para tornar o seu dia
+                            mais simples e prático.
+                        </p>
 
-    transition:
-        transform .25s ease,
-        background .25s ease,
-        border-color .25s ease;
-}
+                        <p>
+                            Trabalhamos com serviços digitais, impressões,
+                            contratos, artes gráficas, personalizados e
+                            diversas outras soluções para pessoas e empresas.
+                        </p>
 
-.button:hover {
-    transform: translateY(-3px);
-}
+                        <p>
+                            Nosso objetivo é oferecer um atendimento
+                            ágil, cuidadoso e acessível para ajudar você
+                            a resolver suas necessidades.
+                        </p>
 
-.button-primary {
-    background: var(--accent);
-    color: #111;
-}
+                        <a href="#contato" class="simple-link">
+                            Fale com nossa equipe
+                            <span>→</span>
+                        </a>
 
-.button-primary:hover {
-    background: #f5bb20;
-}
+                    </div>
 
-.button-primary strong {
-    font-size: 18px;
-    font-weight: 500;
-}
+                </div>
 
-.button-outline {
-    border: 1px solid rgba(255,255,255,.2);
+            </div>
 
-    color: white;
+        </section>
 
-    background: rgba(255,255,255,.02);
-}
 
-.button-outline:hover {
-    border-color: rgba(255,255,255,.5);
-    background: rgba(255,255,255,.06);
-}
+        <!-- =================================================
+             SERVIÇOS
+        ================================================== -->
 
+        <section class="services section" id="servicos">
 
-/* ================= HERO DETAILS ================= */
+            <div class="container">
 
-.hero-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
+                <div class="section-top">
 
-    margin-top: 30px;
-}
+                    <span class="section-number">02</span>
 
-.hero-detail {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+                    <span class="section-line"></span>
 
-    color: rgba(255,255,255,.48);
+                    <span class="section-tag">
+                        NOSSOS SERVIÇOS
+                    </span>
 
-    font-size: 12px;
-}
+                </div>
 
-.hero-detail span {
-    color: var(--accent);
 
-    font-weight: 800;
-}
+                <div class="services-header">
 
+                    <h2>
+                        Tudo o que você
+                        <span>precisa.</span>
+                    </h2>
 
-/* ================= HERO VISUAL ================= */
+                    <p>
+                        Confira alguns dos serviços disponíveis
+                        na Lan House Center.
+                    </p>
 
-.hero-side {
-    position: relative;
+                </div>
 
-    min-height: 500px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+                <div class="services-grid">
 
-.hero-card {
-    position: relative;
 
-    width: min(410px, 100%);
-    min-height: 450px;
+                    <!-- 01 -->
 
-    padding: 27px;
+                    <article class="service-card">
 
-    border: 1px solid rgba(255,255,255,.1);
+                        <div class="service-top">
+                            <span>01</span>
+                            <i>⌘</i>
+                        </div>
 
-    border-radius: 22px;
+                        <h3>
+                            Serviços
+                            <span>digitais</span>
+                        </h3>
 
-    background:
-        linear-gradient(
-            145deg,
-            #272727,
-            #151515
+                        <p>
+                            Agendamento de RG, renovação de CNH,
+                            INSS, prova de vida, reservista,
+                            carteira digital e muito mais.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="service-card featured">
+
+                        <div class="service-top">
+                            <span>02</span>
+                            <i>▤</i>
+                        </div>
+
+                        <h3>
+                            Impressões
+                            <span>e cópias</span>
+                        </h3>
+
+                        <p>
+                            Impressões, cópias, digitalizações,
+                            plastificação, currículos,
+                            trabalhos e documentos.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>03</span>
+                            <i>✦</i>
+                        </div>
+
+                        <h3>
+                            Artes
+                            <span>gráficas</span>
+                        </h3>
+
+                        <p>
+                            Panfletos, banners, adesivos,
+                            cartões de visita, logotipos,
+                            comandas e muito mais.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>04</span>
+                            <i>◇</i>
+                        </div>
+
+                        <h3>
+                            Produtos
+                            <span>personalizados</span>
+                        </h3>
+
+                        <p>
+                            Canecas, placas Pix, tags,
+                            placas decorativas, painéis
+                            e diversos outros produtos.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>05</span>
+                            <i>↗</i>
+                        </div>
+
+                        <h3>
+                            Entrada no
+                            <span>Seguro-Desemprego</span>
+                        </h3>
+
+                        <p>
+                            Auxílio para realizar a entrada
+                            no Seguro-Desemprego e orientação
+                            durante o processo.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>06</span>
+                            <i>§</i>
+                        </div>
+
+                        <h3>
+                            Contrato de
+                            <span>Compra e Venda</span>
+                        </h3>
+
+                        <p>
+                            Elaboração e impressão de contrato
+                            de compra e venda para diferentes
+                            tipos de negociação.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 07 -->
+
+                    <article class="service-card more-service">
+
+                        <div class="service-top">
+                            <span>07</span>
+                            <i>+</i>
+                        </div>
+
+                        <h3>
+                            E muitos
+                            <span>outros serviços</span>
+                        </h3>
+
+                        <p>
+                            Não encontrou o que procura?
+                            Entre em contato com nossa equipe
+                            e consulte outras opções.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Falar conosco
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HORÁRIOS
+        ================================================== -->
+
+        <section class="hours section" id="horarios">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">03</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        HORÁRIOS
+                    </span>
+
+                </div>
+
+
+                <div class="hours-grid">
+
+                    <div class="hours-intro">
+
+                        <div class="open-indicator">
+                            <span></span>
+                            ATENDIMENTO PRESENCIAL
+                        </div>
+
+                        <h2>
+                            Quando
+                            <span>estamos aqui.</span>
+                        </h2>
+
+                        <p>
+                            Escolha o melhor horário para visitar
+                            a Lan House Center.
+                        </p>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <div class="schedule-row">
+                            <strong>Segunda-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Terça-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Quarta-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Quinta-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Sexta-feira</strong>
+                            <span>07:30 — 16:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Sábado</strong>
+                            <span>08:00 — 12:00</span>
+                        </div>
+
+                        <div class="schedule-row closed">
+                            <strong>Domingo</strong>
+                            <span>Fechado</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LOCALIZAÇÃO
+        ================================================== -->
+
+        <section class="location section" id="localizacao">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">04</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        LOCALIZAÇÃO
+                    </span>
+
+                </div>
+
+
+                <div class="location-grid">
+
+                    <div class="map-box">
+
+                        <div class="map-pattern"></div>
+
+                        <div class="map-content">
+
+                            <div class="map-pin">
+                                ●
+                            </div>
+
+                            <strong>
+                                Lan House Center
+                            </strong>
+
+                            <span>
+                                Mossoró — RN
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="location-content">
+
+                        <h2>
+                            Venha nos
+                            <span>visitar.</span>
+                        </h2>
+
+                        <p>
+                            Estamos localizados no Centro de Mossoró,
+                            em um endereço de fácil acesso.
+                        </p>
+
+
+                        <div class="address-box">
+
+                            <div class="address-icon">
+                                ⌖
+                            </div>
+
+                            <div>
+
+                                <small>NOSSO ENDEREÇO</small>
+
+                                <strong>
+                                    Av. Augusto Severo, nº 143
+                                </strong>
+
+                                <p>
+                                    Sala 06 — Centro,
+                                    Mossoró/RN
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Av.%20Augusto%20Severo%20143%20Mossor%C3%B3%20RN"
+                            target="_blank"
+                            rel="noopener"
+                            class="button button-dark"
+                        >
+                            Abrir no Google Maps
+                            <strong>↗</strong>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTATO
+        ================================================== -->
+
+        <section class="contact section" id="contato">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div class="contact-content">
+
+                        <div class="contact-label">
+                            FALE CONOSCO
+                        </div>
+
+                        <h2>
+                            Precisa de algum serviço?
+                        </h2>
+
+                        <p>
+                            Entre em contato com nossa equipe
+                            pelo WhatsApp e tire suas dúvidas.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/558497081163"
+                        target="_blank"
+                        rel="noopener"
+                        class="contact-button"
+                    >
+
+                        <div>
+
+                            <small>WHATSAPP</small>
+
+                            <strong>
+                                (84) 9708-1163
+                            </strong>
+
+                        </div>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="brand footer-brand-logo">
+
+                    <div class="brand-mark">
+                        <span class="lh-l">L</span>
+                        <span class="lh-h">H</span>
+                    </div>
+
+                    <div class="brand-text">
+                        <strong>LAN HOUSE</strong>
+                        <span>CENTER</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Soluções práticas para facilitar
+                    o seu dia a dia.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#horarios">Horários</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a
+                    href="https://wa.me/558497081163"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WhatsApp
+                </a>
+
+                <span>(84) 9708-1163</span>
+                <span>Mossoró — RN</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <span>
+                    © <span id="year"></span> Lan House Center
+                </span>
+
+                <span>
+                    Todos os direitos reservados.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         WHATSAPP
+    ====================================================== -->
+
+    <a
+        href="https://wa.me/558497081163"
+        target="_blank"
+        rel="noopener"
+        class="whatsapp"
+        aria-label="Falar pelo WhatsApp"
+    >
+        <span>✆</span>
+    </a>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* HEADER */
+
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 40) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+
+        });
+
+
+        /* MENU MOBILE */
+
+        const menuButton = document.getElementById("menuButton");
+        const nav = document.getElementById("nav");
+
+        menuButton.addEventListener("click", () => {
+
+            nav.classList.toggle("active");
+            menuButton.classList.toggle("active");
+
+        });
+
+
+        document.querySelectorAll(".nav a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                nav.classList.remove("active");
+                menuButton.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* ANIMAÇÕES */
+
+        const animatedElements = document.querySelectorAll(
+            ".service-card, .about-title, .about-text, .hours-intro, .schedule, .map-box, .location-content, .contact-box"
         );
 
-    box-shadow:
-        0 40px 80px rgba(0,0,0,.45);
+        const observer = new IntersectionObserver(
 
-    transform: rotate(2deg);
+            entries => {
 
-    transition: transform .5s ease;
-}
+                entries.forEach(entry => {
 
-.hero-card:hover {
-    transform: rotate(0deg) translateY(-8px);
-}
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
 
-.hero-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+                });
 
-    font-size: 10px;
-    font-weight: 800;
+            },
 
-    letter-spacing: 2px;
+            {
+                threshold: 0.12
+            }
 
-    color: rgba(255,255,255,.48);
-}
-
-.card-status {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-
-    letter-spacing: 0;
-
-    font-size: 10px;
-}
-
-.card-status i {
-    width: 6px;
-    height: 6px;
-
-    border-radius: 50%;
-
-    background: #4ecb71;
-}
-
-.hero-card-logo {
-    height: 300px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-card-logo img {
-    width: 245px;
-    height: 210px;
-
-    object-fit: contain;
-
-    filter:
-        drop-shadow(0 20px 25px rgba(0,0,0,.35));
-}
-
-.hero-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    border-top: 1px solid rgba(255,255,255,.08);
-
-    padding-top: 20px;
-}
-
-.hero-card-bottom small,
-.hero-card-bottom strong {
-    display: block;
-}
-
-.hero-card-bottom small {
-    margin-bottom: 5px;
-
-    color: rgba(255,255,255,.4);
-
-    font-size: 11px;
-}
-
-.hero-card-bottom strong {
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 20px;
-}
-
-.card-arrow {
-    display: grid;
-    place-items: center;
-
-    width: 40px;
-    height: 40px;
-
-    border-radius: 50%;
-
-    background: var(--accent);
-    color: #111;
-
-    font-size: 19px;
-}
-
-
-/* ================= MINI CARDS ================= */
-
-.mini-card {
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 13px 17px;
-
-    background: rgba(255,255,255,.96);
-    color: #111;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 20px 50px rgba(0,0,0,.3);
-}
-
-.mini-card strong,
-.mini-card small {
-    display: block;
-}
-
-.mini-card strong {
-    font-size: 12px;
-}
-
-.mini-card small {
-    margin-top: 2px;
-
-    color: #777;
-
-    font-size: 10px;
-}
-
-.mini-icon {
-    display: grid;
-    place-items: center;
-
-    width: 31px;
-    height: 31px;
-
-    border-radius: 7px;
-
-    background: #111;
-    color: var(--accent);
-}
-
-.mini-card-one {
-    left: -45px;
-    bottom: 75px;
-}
-
-.mini-card-two {
-    right: -20px;
-    top: 75px;
-}
-
-
-/* ================= TICKER ================= */
-
-.ticker {
-    overflow: hidden;
-
-    background: var(--accent);
-    color: #111;
-
-    border-bottom: 1px solid rgba(0,0,0,.08);
-}
-
-.ticker-track {
-    min-width: max-content;
-
-    display: flex;
-    align-items: center;
-    gap: 27px;
-
-    padding: 16px 0;
-
-    font-size: 11px;
-    font-weight: 900;
-
-    letter-spacing: 1.5px;
-
-    animation: ticker 28s linear infinite;
-}
-
-.ticker-track b {
-    font-size: 12px;
-}
-
-@keyframes ticker {
-
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-35%);
-    }
-
-}
-
-
-/* ================= SECTIONS ================= */
-
-.section {
-    padding: 125px 0;
-}
-
-.section-top {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    margin-bottom: 58px;
-}
-
-.section-number {
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 12px;
-    font-weight: 800;
-
-    color: var(--accent);
-}
-
-.section-tag {
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    color: var(--gray-600);
-}
-
-.section-tag::before {
-    content: "";
-
-    display: inline-block;
-
-    width: 35px;
-    height: 1px;
-
-    margin-right: 12px;
-
-    vertical-align: middle;
-
-    background: var(--gray-200);
-}
-
-
-/* ================= SOBRE ================= */
-
-.about {
-    background: var(--white);
-}
-
-.about-grid {
-    display: grid;
-
-    grid-template-columns: .9fr 1.1fr;
-
-    gap: 100px;
-}
-
-.about-title h2,
-.services-header h2,
-.hours-intro h2,
-.location-content h2 {
-    font-family: "Montserrat", sans-serif;
-
-    font-size: clamp(38px, 4.5vw, 60px);
-
-    line-height: 1.06;
-
-    letter-spacing: -2.5px;
-}
-
-.about-title h2 span,
-.services-header h2 span,
-.hours-intro h2 span,
-.location-content h2 span {
-    display: block;
-
-    color: var(--gray-400);
-}
-
-.about-text {
-    max-width: 620px;
-}
-
-.about-text p {
-    color: var(--gray-600);
-
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.about-text .large-text {
-    margin-bottom: 20px;
-
-    color: #333;
-
-    font-size: 20px;
-    line-height: 1.65;
-}
-
-.about-text strong {
-    color: #111;
-}
-
-.about-text p + p {
-    margin-top: 16px;
-}
-
-.simple-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 17px;
-
-    margin-top: 28px;
-
-    padding-bottom: 8px;
-
-    border-bottom: 1px solid #111;
-
-    font-size: 13px;
-    font-weight: 800;
-}
-
-.simple-link span {
-    transition: transform .25s ease;
-}
-
-.simple-link:hover span {
-    transform: translateX(5px);
-}
-
-
-/* ================= SERVIÇOS ================= */
-
-.services {
-    background: var(--gray-50);
-}
-
-.services-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    gap: 40px;
-
-    margin-bottom: 55px;
-}
-
-.services-header p {
-    max-width: 330px;
-
-    color: var(--gray-600);
-
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.services-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 15px;
-}
-
-.service-card {
-    position: relative;
-
-    min-height: 360px;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 30px;
-
-    border: 1px solid #e1e1dc;
-
-    border-radius: 13px;
-
-    background: white;
-
-    overflow: hidden;
-
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease,
-        border-color .35s ease;
-}
-
-.service-card::after {
-    content: "";
-
-    position: absolute;
-
-    right: -50px;
-    bottom: -70px;
-
-    width: 170px;
-    height: 170px;
-
-    border-radius: 50%;
-
-    background: rgba(231,169,0,.08);
-
-    transition: transform .4s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-
-    border-color: rgba(231,169,0,.4);
-
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.08);
-}
-
-.service-card:hover::after {
-    transform: scale(1.4);
-}
-
-.service-card.featured {
-    background: var(--black);
-    color: white;
-
-    border-color: var(--black);
-}
-
-.service-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-bottom: 50px;
-}
-
-.service-number {
-    font-size: 10px;
-    font-weight: 800;
-
-    color: var(--gray-400);
-}
-
-.featured .service-number {
-    color: rgba(255,255,255,.3);
-}
-
-.service-icon {
-    display: grid;
-    place-items: center;
-
-    width: 45px;
-    height: 45px;
-
-    border-radius: 9px;
-
-    background: #f2f2ef;
-
-    color: #111;
-
-    font-size: 19px;
-}
-
-.featured .service-icon {
-    background: var(--accent);
-}
-
-.service-card h3 {
-    position: relative;
-    z-index: 1;
-
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 25px;
-    line-height: 1.12;
-
-    letter-spacing: -1px;
-}
-
-.service-card h3 span {
-    display: block;
-
-    color: var(--gray-400);
-}
-
-.featured h3 span {
-    color: rgba(255,255,255,.45);
-}
-
-.service-card p {
-    position: relative;
-    z-index: 1;
-
-    margin-top: 17px;
-
-    color: var(--gray-600);
-
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.featured p {
-    color: rgba(255,255,255,.53);
-}
-
-.service-card a {
-    position: relative;
-    z-index: 2;
-
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    margin-top: auto;
-    padding-top: 25px;
-
-    font-size: 11px;
-    font-weight: 800;
-}
-
-.service-card a span {
-    transition: transform .25s ease;
-}
-
-.service-card a:hover span {
-    transform: translateX(5px);
-}
-
-.more-service {
-    background: #f0eee7;
-}
-
-
-/* ================= HORÁRIOS ================= */
-
-.hours {
-    background: white;
-}
-
-.hours-grid {
-    display: grid;
-
-    grid-template-columns: .85fr 1.15fr;
-
-    gap: 110px;
-
-    align-items: start;
-}
-
-.open-indicator {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-
-    margin-bottom: 25px;
-
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-
-    color: var(--gray-600);
-}
-
-.open-indicator span {
-    width: 7px;
-    height: 7px;
-
-    border-radius: 50%;
-
-    background: #39b864;
-}
-
-.hours-intro p {
-    max-width: 400px;
-
-    margin-top: 25px;
-
-    color: var(--gray-600);
-
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.schedule {
-    border-top: 1px solid var(--gray-200);
-}
-
-.schedule-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    min-height: 67px;
-
-    border-bottom: 1px solid var(--gray-200);
-
-    font-size: 13px;
-}
-
-.schedule-row strong {
-    font-weight: 700;
-}
-
-.schedule-row span {
-    color: var(--gray-600);
-}
-
-.schedule-row.closed span {
-    color: #a56b6b;
-}
-
-
-/* ================= LOCALIZAÇÃO ================= */
-
-.location {
-    background: var(--gray-50);
-}
-
-.location-grid {
-    display: grid;
-
-    grid-template-columns: 1.1fr .9fr;
-
-    gap: 90px;
-
-    align-items: center;
-}
-
-.map-box {
-    position: relative;
-
-    min-height: 480px;
-
-    overflow: hidden;
-
-    border-radius: 15px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #dadad5,
-            #ededeb
         );
 
-    border: 1px solid #dddcd7;
-}
 
-.map-pattern {
-    position: absolute;
-    inset: -100px;
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
 
-    background-image:
-        linear-gradient(
-            28deg,
-            transparent 48%,
-            rgba(255,255,255,.85) 49%,
-            rgba(255,255,255,.85) 51%,
-            transparent 52%
-        ),
-        linear-gradient(
-            120deg,
-            transparent 48%,
-            rgba(255,255,255,.65) 49%,
-            rgba(255,255,255,.65) 51%,
-            transparent 52%
-        );
 
-    background-size: 130px 100px;
+        /* ANO */
 
-    transform: rotate(-7deg);
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
 
-    opacity: .7;
-}
+    </script>
 
-.map-content {
-    position: absolute;
+</body>
 
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 190px;
-
-    padding: 23px;
-
-    text-align: center;
-
-    background: rgba(255,255,255,.95);
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 20px 50px rgba(0,0,0,.12);
-}
-
-.map-pin {
-    display: grid;
-    place-items: center;
-
-    width: 42px;
-    height: 42px;
-
-    margin: 0 auto 13px;
-
-    border-radius: 50%;
-
-    background: var(--accent);
-
-    color: #111;
-}
-
-.map-content strong,
-.map-content span {
-    display: block;
-}
-
-.map-content strong {
-    font-size: 13px;
-}
-
-.map-content span {
-    margin-top: 4px;
-
-    color: var(--gray-600);
-
-    font-size: 11px;
-}
-
-.location-content h2 span {
-    color: var(--accent);
-}
-
-.location-content > p {
-    max-width: 450px;
-
-    margin-top: 25px;
-
-    color: var(--gray-600);
-
-    font-size: 15px;
-    line-height: 1.75;
-}
-
-.address-box {
-    display: flex;
-    gap: 17px;
-
-    margin-top: 35px;
-    padding: 20px;
-
-    border: 1px solid #dddcd7;
-
-    border-radius: 10px;
-
-    background: white;
-}
-
-.address-icon {
-    display: grid;
-    place-items: center;
-
-    flex-shrink: 0;
-
-    width: 40px;
-    height: 40px;
-
-    border-radius: 8px;
-
-    background: #111;
-    color: var(--accent);
-}
-
-.address-box small {
-    display: block;
-
-    margin-bottom: 6px;
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    color: var(--gray-400);
-}
-
-.address-box strong {
-    display: block;
-
-    font-size: 13px;
-}
-
-.address-box p {
-    margin-top: 4px;
-
-    color: var(--gray-600);
-
-    font-size: 12px;
-}
-
-.button-dark {
-    margin-top: 22px;
-
-    background: #111;
-    color: white;
-}
-
-.button-dark:hover {
-    background: #252525;
-}
-
-.button-dark strong {
-    font-size: 16px;
-}
-
-
-/* ================= CONTATO ================= */
-
-.contact {
-    padding-top: 80px;
-    padding-bottom: 100px;
-
-    background: var(--gray-50);
-}
-
-.contact-box {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 40px;
-
-    padding: 55px 60px;
-
-    overflow: hidden;
-
-    border-radius: 16px;
-
-    background: var(--black);
-
-    color: white;
-
-    box-shadow:
-        0 35px 80px rgba(0,0,0,.15);
-}
-
-.contact-box::after {
-    content: "";
-
-    position: absolute;
-
-    right: -150px;
-    top: -180px;
-
-    width: 450px;
-    height: 450px;
-
-    border-radius: 50%;
-
-    background: rgba(231,169,0,.12);
-}
-
-.contact-content {
-    position: relative;
-    z-index: 2;
-}
-
-.contact-label {
-    margin-bottom: 18px;
-
-    color: var(--accent);
-
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.contact-content h2 {
-    font-family: "Montserrat", sans-serif;
-
-    font-size: clamp(30px, 4vw, 45px);
-
-    letter-spacing: -1.8px;
-}
-
-.contact-content p {
-    max-width: 500px;
-
-    margin-top: 15px;
-
-    color: rgba(255,255,255,.52);
-
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.contact-button {
-    position: relative;
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 45px;
-
-    min-width: 290px;
-
-    padding: 19px 20px;
-
-    border-radius: 10px;
-
-    background: white;
-    color: #111;
-
-    transition:
-        transform .25s ease,
-        background .25s ease;
-}
-
-.contact-button:hover {
-    transform: translateY(-4px);
-    background: var(--accent);
-}
-
-.contact-button small,
-.contact-button strong {
-    display: block;
-}
-
-.contact-button small {
-    margin-bottom: 4px;
-
-    color: #888;
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 1.5px;
-}
-
-.contact-button strong {
-    font-size: 15px;
-}
-
-.contact-button span {
-    font-size: 22px;
-}
-
-
-/* ================= FOOTER ================= */
-
-.footer {
-    background: #0c0c0c;
-    color: white;
-}
-
-.footer-grid {
-    display: grid;
-
-    grid-template-columns: 1.5fr .7fr .7fr;
-
-    gap: 100px;
-
-    padding: 70px 0;
-}
-
-.footer-logo {
-    width: 150px;
-}
-
-.footer-brand p {
-    max-width: 250px;
-
-    margin-top: 20px;
-
-    color: rgba(255,255,255,.4);
-
-    font-size: 12px;
-    line-height: 1.7;
-}
-
-.footer-column h3 {
-    margin-bottom: 20px;
-
-    color: rgba(255,255,255,.35);
-
-    font-size: 10px;
-    font-weight: 800;
-
-    letter-spacing: 1.7px;
-}
-
-.footer-column a,
-.footer-column span {
-    display: block;
-
-    margin-top: 11px;
-
-    color: rgba(255,255,255,.65);
-
-    font-size: 12px;
-
-    transition: color .2s ease;
-}
-
-.footer-column a:hover {
-    color: var(--accent);
-}
-
-.footer-column span {
-    color: rgba(255,255,255,.38);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255,255,255,.08);
-}
-
-.footer-bottom .container {
-    min-height: 62px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 20px;
-}
-
-.footer-bottom span {
-    color: rgba(255,255,255,.3);
-
-    font-size: 10px;
-}
-
-
-/* ================= WHATSAPP ================= */
-
-.whatsapp {
-    position: fixed;
-
-    right: 24px;
-    bottom: 24px;
-
-    z-index: 900;
-
-    display: grid;
-    place-items: center;
-
-    width: 58px;
-    height: 58px;
-
-    border-radius: 50%;
-
-    background: #25d366;
-    color: white;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.2);
-
-    transition:
-        transform .25s ease;
-}
-
-.whatsapp:hover {
-    transform: translateY(-5px) scale(1.05);
-}
-
-.whatsapp span {
-    font-size: 26px;
-}
-
-
-/* ================= ANIMAÇÕES ================= */
-
-.service-card,
-.about-title,
-.about-text,
-.hours-intro,
-.schedule,
-.map-box,
-.location-content,
-.contact-box {
-    opacity: 0;
-
-    transform: translateY(25px);
-
-    transition:
-        opacity .7s ease,
-        transform .7s ease;
-}
-
-.service-card.show,
-.about-title.show,
-.about-text.show,
-.hours-intro.show,
-.schedule.show,
-.map-box.show,
-.location-content.show,
-.contact-box.show {
-    opacity: 1;
-
-    transform: translateY(0);
-}
-
-
-/* ================= RESPONSIVO ================= */
-
-@media (max-width: 1000px) {
-
-    .nav {
-        gap: 18px;
-    }
-
-    .nav a {
-        font-size: 12px;
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
-
-        gap: 70px;
-    }
-
-    .hero {
-        padding-bottom: 100px;
-    }
-
-    .hero-side {
-        max-width: 500px;
-    }
-
-    .about-grid,
-    .hours-grid,
-    .location-grid {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        gap: 50px;
-    }
-
-}
-
-
-/* ================= TABLET ================= */
-
-@media (max-width: 760px) {
-
-    .container {
-        width: min(var(--container), calc(100% - 32px));
-    }
-
-    .nav-container {
-        height: 72px;
-    }
-
-    .site-logo {
-        width: 112px;
-        height: 50px;
-    }
-
-    .nav {
-        position: absolute;
-
-        top: 72px;
-        left: 16px;
-        right: 16px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 0;
-
-        padding: 10px;
-
-        border: 1px solid rgba(255,255,255,.1);
-
-        border-radius: 12px;
-
-        background: rgba(17,17,17,.98);
-
-        box-shadow: 0 20px 40px rgba(0,0,0,.3);
-
-        opacity: 0;
-        visibility: hidden;
-
-        transform: translateY(-10px);
-
-        transition: .25s ease;
-    }
-
-    .nav.active {
-        opacity: 1;
-        visibility: visible;
-
-        transform: translateY(0);
-    }
-
-    .nav a {
-        padding: 14px;
-
-        border-radius: 7px;
-
-        font-size: 13px;
-    }
-
-    .nav a:hover {
-        background: rgba(255,255,255,.06);
-    }
-
-    .header-button {
-        display: none;
-    }
-
-    .menu-button {
-        display: block;
-    }
-
-    .hero {
-        min-height: auto;
-
-        padding-top: 72px;
-    }
-
-    .hero-container {
-        padding: 85px 0 100px;
-    }
-
-    .hero h1 {
-        font-size: 49px;
-
-        letter-spacing: -2.5px;
-    }
-
-    .hero-content > p {
-        font-size: 15px;
-    }
-
-    .hero-buttons {
-        align-items: stretch;
-        flex-direction: column;
-
-        max-width: 320px;
-    }
-
-    .button {
-        width: 100%;
-    }
-
-    .hero-side {
-        min-height: 430px;
-    }
-
-    .hero-card {
-        min-height: 400px;
-    }
-
-    .hero-card-logo {
-        height: 255px;
-    }
-
-    .mini-card-one {
-        left: -5px;
-        bottom: 30px;
-    }
-
-    .mini-card-two {
-        right: -5px;
-        top: 40px;
-    }
-
-    .section {
-        padding: 90px 0;
-    }
-
-    .about-grid {
-        gap: 40px;
-    }
-
-    .services-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        min-height: 330px;
-    }
-
-    .location-grid {
-        gap: 40px;
-    }
-
-    .map-box {
-        min-height: 350px;
-    }
-
-    .contact-box {
-        align-items: flex-start;
-        flex-direction: column;
-
-        padding: 40px 30px;
-    }
-
-    .contact-button {
-        width: 100%;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 50px;
-    }
-
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
-
-}
-
-
-/* ================= CELULAR ================= */
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero-details {
-        flex-direction: column;
-
-        gap: 10px;
-    }
-
-    .hero-side {
-        min-height: 370px;
-    }
-
-    .hero-card {
-        min-height: 350px;
-
-        padding: 20px;
-    }
-
-    .hero-card-logo {
-        height: 220px;
-    }
-
-    .hero-card-logo img {
-        width: 200px;
-    }
-
-    .mini-card {
-        padding: 10px 12px;
-    }
-
-    .mini-card-one {
-        left: -5px;
-    }
-
-    .mini-card-two {
-        right: -5px;
-    }
-
-    .about-title h2,
-    .services-header h2,
-    .hours-intro h2,
-    .location-content h2 {
-        font-size: 39px;
-    }
-
-    .schedule-row {
-        min-height: 62px;
-
-        font-size: 12px;
-    }
-
-    .address-box {
-        align-items: flex-start;
-    }
-
-    .contact-button {
-        min-width: 0;
-
-        gap: 20px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-brand {
-        grid-column: auto;
-    }
-
-    .footer-bottom .container {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-
-        padding: 17px 0;
-    }
-
-    .whatsapp {
-        right: 16px;
-        bottom: 16px;
-
-        width: 53px;
-        height: 53px;
-    }
-
-}
+</html>
