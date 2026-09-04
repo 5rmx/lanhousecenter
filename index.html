@@ -1,131 +1,1083 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lan House Center — serviços digitais, impressões, contratos, artes gráficas e muito mais em Mossoró-RN.">
-  <meta name="theme-color" content="#0b0b0b">
-  <title>Lan House Center | Mossoró - RN</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Lan House Center — serviços digitais, impressões, contratos, artes gráficas e muito mais em Mossoró-RN.">
+
+    <meta name="theme-color" content="#0b0b0b">
+
+    <title>Lan House Center | Mossoró - RN</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header" id="header">
-    <div class="container nav-container">
-      <a href="#inicio" class="brand" aria-label="Lan House Center — início">
-        <span class="brand-mark" aria-hidden="true"><span class="lh-l">L</span><span class="lh-h">H</span></span>
-        <span class="brand-text"><strong>LAN HOUSE</strong><span>CENTER</span></span>
-      </a>
 
-      <nav class="nav" id="nav" aria-label="Navegação principal">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre nós</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#horarios">Horários</a>
-        <a href="#localizacao">Localização</a>
-      </nav>
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-      <a href="https://wa.me/558497081163" target="_blank" rel="noopener" class="header-button"><span>Fale conosco</span><strong>↗</strong></a>
-      <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+    <header class="header" id="header">
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-red-glow" aria-hidden="true"></div>
-      <div class="container hero-container">
-        <div class="hero-content">
-          <p class="hero-label"><span></span>SERVIÇOS EM MOSSORÓ — RN</p>
-          <h1>Soluções que <span>facilitam</span> o seu dia.</h1>
-          <p>Serviços digitais, impressões, contratos, artes gráficas e muito mais. Tudo em um só lugar, com praticidade e atendimento de qualidade.</p>
-          <div class="hero-buttons">
-            <a href="https://wa.me/558497081163" target="_blank" rel="noopener" class="button button-primary"><span>Falar pelo WhatsApp</span><strong>↗</strong></a>
-            <a href="#servicos" class="button button-outline">Conhecer serviços</a>
-          </div>
-          <div class="hero-details" aria-label="Destaques">
-            <span><b>✓</b>Atendimento presencial</span>
-            <span><b>✓</b>Serviços variados</span>
-            <span><b>✓</b>Mossoró — RN</span>
-          </div>
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+            <a href="#inicio" class="brand">
+
+                <div class="brand-mark">
+                    <span class="lh-l">L</span>
+                    <span class="lh-h">H</span>
+                </div>
+
+                <div class="brand-text">
+                    <strong>LAN HOUSE</strong>
+                    <span>CENTER</span>
+                </div>
+
+            </a>
+
+
+            <!-- MENU -->
+            <nav class="nav" id="nav">
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#horarios">Horários</a>
+                <a href="#localizacao">Localização</a>
+
+            </nav>
+
+
+            <!-- BOTÃO -->
+            <a
+                href="https://wa.me/558497081163"
+                target="_blank"
+                rel="noopener"
+                class="header-button"
+            >
+                <span>Fale conosco</span>
+                <strong>↗</strong>
+            </a>
+
+
+            <!-- MENU MOBILE -->
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Abrir menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
 
-        <div class="hero-visual" aria-label="Identidade visual Lan House Center">
-          <div class="hero-brand-card">
-            <div class="card-lines" aria-hidden="true"></div>
-            <div class="card-top"><span>LAN HOUSE</span><span class="online"><i></i>ATENDIMENTO</span></div>
-            <div class="big-logo" aria-hidden="true"><span class="big-l">L</span><span class="big-h">H</span><span class="logo-arc arc-red"></span><span class="logo-arc arc-white"></span></div>
-            <div class="card-title"><strong>LAN HOUSE</strong><span>CENTER</span></div>
-            <div class="card-bottom"><span><small>SERVIÇOS DIGITAIS</small><strong>DESDE 2026</strong></span><span class="card-arrow">↗</span></div>
-          </div>
-          <div class="floating-card floating-one"><span class="floating-icon">+</span><span><strong>+ serviços</strong><small>e muito mais</small></span></div>
-          <div class="floating-card floating-two"><span class="floating-icon red">✓</span><span><strong>Atendimento</strong><small>presencial</small></span></div>
+    </header>
+
+
+    <!-- =====================================================
+         CONTEÚDO
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-grid"></div>
+            <div class="hero-red-glow"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-label">
+                        <span></span>
+                        SERVIÇOS EM MOSSORÓ — RN
+                    </div>
+
+
+                    <h1>
+                        Soluções que
+                        <span>facilitam</span>
+                        o seu dia.
+                    </h1>
+
+
+                    <p>
+                        Serviços digitais, impressões, contratos,
+                        artes gráficas e muito mais. Tudo em um só lugar,
+                        com praticidade e atendimento de qualidade.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                            class="button button-primary"
+                        >
+                            <span>Falar pelo WhatsApp</span>
+                            <strong>↗</strong>
+                        </a>
+
+                        <a
+                            href="#servicos"
+                            class="button button-outline"
+                        >
+                            Conhecer serviços
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-details">
+
+                        <div>
+                            <b>✓</b>
+                            Atendimento presencial
+                        </div>
+
+                        <div>
+                            <b>✓</b>
+                            Serviços variados
+                        </div>
+
+                        <div>
+                            <b>✓</b>
+                            Mossoró — RN
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VISUAL DO HERO -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-brand-card">
+
+                        <div class="card-lines"></div>
+
+                        <div class="card-top">
+
+                            <span>LAN HOUSE</span>
+
+                            <div class="online">
+                                <i></i>
+                                ATENDIMENTO
+                            </div>
+
+                        </div>
+
+
+                        <!-- LH GRANDE -->
+                        <div class="big-logo">
+
+                            <div class="big-l">L</div>
+                            <div class="big-h">H</div>
+
+                            <div class="logo-arc arc-red"></div>
+                            <div class="logo-arc arc-white"></div>
+
+                        </div>
+
+
+                        <div class="card-title">
+
+                            <strong>LAN HOUSE</strong>
+                            <span>CENTER</span>
+
+                        </div>
+
+
+                        <div class="card-bottom">
+
+                            <div>
+                                <small>SERVIÇOS DIGITAIS</small>
+                                <strong>DESDE 2026</strong>
+                            </div>
+
+                            <div class="card-arrow">
+                                ↗
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MINI CARD 1 -->
+
+                    <div class="floating-card floating-one">
+
+                        <div class="floating-icon">
+                            +
+                        </div>
+
+                        <div>
+                            <strong>+ serviços</strong>
+                            <small>e muito mais</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- MINI CARD 2 -->
+
+                    <div class="floating-card floating-two">
+
+                        <div class="floating-icon red">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Atendimento</strong>
+                            <small>presencial</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TICKER
+        ================================================== -->
+
+        <section class="ticker">
+
+            <div class="ticker-track">
+
+                <span>IMPRESSÕES</span>
+                <b>•</b>
+
+                <span>SERVIÇOS DIGITAIS</span>
+                <b>•</b>
+
+                <span>CONTRATOS</span>
+                <b>•</b>
+
+                <span>ARTES GRÁFICAS</span>
+                <b>•</b>
+
+                <span>PERSONALIZADOS</span>
+                <b>•</b>
+
+                <span>SEGURO-DESEMPREGO</span>
+                <b>•</b>
+
+                <span>IMPRESSÕES</span>
+                <b>•</b>
+
+                <span>SERVIÇOS DIGITAIS</span>
+                <b>•</b>
+
+                <span>CONTRATOS</span>
+                <b>•</b>
+
+                <span>ARTES GRÁFICAS</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOBRE
+        ================================================== -->
+
+        <section class="about section" id="sobre">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">01</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        SOBRE NÓS
+                    </span>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-title">
+
+                        <h2>
+                            Praticidade para
+                            <span>resolver o que você precisa.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <p class="large-text">
+                            A <strong>Lan House Center</strong> reúne diversos
+                            serviços em um só lugar para tornar o seu dia
+                            mais simples e prático.
+                        </p>
+
+                        <p>
+                            Trabalhamos com serviços digitais, impressões,
+                            contratos, artes gráficas, personalizados e
+                            diversas outras soluções para pessoas e empresas.
+                        </p>
+
+                        <p>
+                            Nosso objetivo é oferecer um atendimento
+                            ágil, cuidadoso e acessível para ajudar você
+                            a resolver suas necessidades.
+                        </p>
+
+                        <a href="#contato" class="simple-link">
+                            Fale com nossa equipe
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVIÇOS
+        ================================================== -->
+
+        <section class="services section" id="servicos">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">02</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        NOSSOS SERVIÇOS
+                    </span>
+
+                </div>
+
+
+                <div class="services-header">
+
+                    <h2>
+                        Tudo o que você
+                        <span>precisa.</span>
+                    </h2>
+
+                    <p>
+                        Confira alguns dos serviços disponíveis
+                        na Lan House Center.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <!-- 01 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>01</span>
+                            <i>⌘</i>
+                        </div>
+
+                        <h3>
+                            Serviços
+                            <span>digitais</span>
+                        </h3>
+
+                        <p>
+                            Agendamento de RG, renovação de CNH,
+                            INSS, prova de vida, reservista,
+                            carteira digital e muito mais.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="service-card featured">
+
+                        <div class="service-top">
+                            <span>02</span>
+                            <i>▤</i>
+                        </div>
+
+                        <h3>
+                            Impressões
+                            <span>e cópias</span>
+                        </h3>
+
+                        <p>
+                            Impressões, cópias, digitalizações,
+                            plastificação, currículos,
+                            trabalhos e documentos.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>03</span>
+                            <i>✦</i>
+                        </div>
+
+                        <h3>
+                            Artes
+                            <span>gráficas</span>
+                        </h3>
+
+                        <p>
+                            Panfletos, banners, adesivos,
+                            cartões de visita, logotipos,
+                            comandas e muito mais.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>04</span>
+                            <i>◇</i>
+                        </div>
+
+                        <h3>
+                            Produtos
+                            <span>personalizados</span>
+                        </h3>
+
+                        <p>
+                            Canecas, placas Pix, tags,
+                            placas decorativas, painéis
+                            e diversos outros produtos.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>05</span>
+                            <i>↗</i>
+                        </div>
+
+                        <h3>
+                            Entrada no
+                            <span>Seguro-Desemprego</span>
+                        </h3>
+
+                        <p>
+                            Auxílio para realizar a entrada
+                            no Seguro-Desemprego e orientação
+                            durante o processo.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article class="service-card">
+
+                        <div class="service-top">
+                            <span>06</span>
+                            <i>§</i>
+                        </div>
+
+                        <h3>
+                            Contrato de
+                            <span>Compra e Venda</span>
+                        </h3>
+
+                        <p>
+                            Elaboração e impressão de contrato
+                            de compra e venda para diferentes
+                            tipos de negociação.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Consultar serviço
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+
+                    <!-- 07 -->
+
+                    <article class="service-card more-service">
+
+                        <div class="service-top">
+                            <span>07</span>
+                            <i>+</i>
+                        </div>
+
+                        <h3>
+                            E muitos
+                            <span>outros serviços</span>
+                        </h3>
+
+                        <p>
+                            Não encontrou o que procura?
+                            Entre em contato com nossa equipe
+                            e consulte outras opções.
+                        </p>
+
+                        <a
+                            href="https://wa.me/558497081163"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Falar conosco
+                            <b>→</b>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HORÁRIOS
+        ================================================== -->
+
+        <section class="hours section" id="horarios">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">03</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        HORÁRIOS
+                    </span>
+
+                </div>
+
+
+                <div class="hours-grid">
+
+                    <div class="hours-intro">
+
+                        <div class="open-indicator">
+                            <span></span>
+                            ATENDIMENTO PRESENCIAL
+                        </div>
+
+                        <h2>
+                            Quando
+                            <span>estamos aqui.</span>
+                        </h2>
+
+                        <p>
+                            Escolha o melhor horário para visitar
+                            a Lan House Center.
+                        </p>
+
+                    </div>
+
+
+                    <div class="schedule">
+
+                        <div class="schedule-row">
+                            <strong>Segunda-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Terça-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Quarta-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Quinta-feira</strong>
+                            <span>07:30 — 17:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Sexta-feira</strong>
+                            <span>07:30 — 16:30</span>
+                        </div>
+
+                        <div class="schedule-row">
+                            <strong>Sábado</strong>
+                            <span>08:00 — 12:00</span>
+                        </div>
+
+                        <div class="schedule-row closed">
+                            <strong>Domingo</strong>
+                            <span>Fechado</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LOCALIZAÇÃO
+        ================================================== -->
+
+        <section class="location section" id="localizacao">
+
+            <div class="container">
+
+                <div class="section-top">
+
+                    <span class="section-number">04</span>
+
+                    <span class="section-line"></span>
+
+                    <span class="section-tag">
+                        LOCALIZAÇÃO
+                    </span>
+
+                </div>
+
+
+                <div class="location-grid">
+
+                    <div class="map-box">
+
+                        <div class="map-pattern"></div>
+
+                        <div class="map-content">
+
+                            <div class="map-pin">
+                                ●
+                            </div>
+
+                            <strong>
+                                Lan House Center
+                            </strong>
+
+                            <span>
+                                Mossoró — RN
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="location-content">
+
+                        <h2>
+                            Venha nos
+                            <span>visitar.</span>
+                        </h2>
+
+                        <p>
+                            Estamos localizados no Centro de Mossoró,
+                            em um endereço de fácil acesso.
+                        </p>
+
+
+                        <div class="address-box">
+
+                            <div class="address-icon">
+                                ⌖
+                            </div>
+
+                            <div>
+
+                                <small>NOSSO ENDEREÇO</small>
+
+                                <strong>
+                                    Av. Augusto Severo, nº 143
+                                </strong>
+
+                                <p>
+                                    Sala 06 — Centro,
+                                    Mossoró/RN
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Av.%20Augusto%20Severo%20143%20Mossor%C3%B3%20RN"
+                            target="_blank"
+                            rel="noopener"
+                            class="button button-dark"
+                        >
+                            Abrir no Google Maps
+                            <strong>↗</strong>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTATO
+        ================================================== -->
+
+        <section class="contact section" id="contato">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div class="contact-content">
+
+                        <div class="contact-label">
+                            FALE CONOSCO
+                        </div>
+
+                        <h2>
+                            Precisa de algum serviço?
+                        </h2>
+
+                        <p>
+                            Entre em contato com nossa equipe
+                            pelo WhatsApp e tire suas dúvidas.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/558497081163"
+                        target="_blank"
+                        rel="noopener"
+                        class="contact-button"
+                    >
+
+                        <div>
+
+                            <small>WHATSAPP</small>
+
+                            <strong>
+                                (84) 9708-1163
+                            </strong>
+
+                        </div>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="brand footer-brand-logo">
+
+                    <div class="brand-mark">
+                        <span class="lh-l">L</span>
+                        <span class="lh-h">H</span>
+                    </div>
+
+                    <div class="brand-text">
+                        <strong>LAN HOUSE</strong>
+                        <span>CENTER</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Soluções práticas para facilitar
+                    o seu dia a dia.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#horarios">Horários</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a
+                    href="https://wa.me/558497081163"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WhatsApp
+                </a>
+
+                <span>(84) 9708-1163</span>
+                <span>Mossoró — RN</span>
+
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <section class="ticker" aria-label="Serviços oferecidos"><div class="ticker-track"><span>IMPRESSÕES</span><b>•</b><span>SERVIÇOS DIGITAIS</span><b>•</b><span>CONTRATOS</span><b>•</b><span>ARTES GRÁFICAS</span><b>•</b><span>PERSONALIZADOS</span><b>•</b><span>SEGURO-DESEMPREGO</span><b>•</b><span>IMPRESSÕES</span><b>•</b><span>SERVIÇOS DIGITAIS</span><b>•</b><span>CONTRATOS</span><b>•</b><span>ARTES GRÁFICAS</span></div></section>
 
-    <section class="about section" id="sobre">
-      <div class="container">
-        <div class="section-top"><span class="section-number">01</span><span class="section-line"></span><span class="section-tag">SOBRE NÓS</span></div>
-        <div class="about-grid">
-          <div class="about-title reveal"><h2>Praticidade para <span>resolver o que você precisa.</span></h2></div>
-          <div class="about-text reveal">
-            <p class="large-text">A <strong>Lan House Center</strong> reúne diversos serviços em um só lugar para tornar o seu dia mais simples e prático.</p>
-            <p>Trabalhamos com serviços digitais, impressões, contratos, artes gráficas, personalizados e diversas outras soluções para pessoas e empresas.</p>
-            <p>Nosso objetivo é oferecer um atendimento ágil, cuidadoso e acessível para ajudar você a resolver suas necessidades.</p>
-            <a href="#contato" class="simple-link">Fale com nossa equipe <span>→</span></a>
-          </div>
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <span>
+                    © <span id="year"></span> Lan House Center
+                </span>
+
+                <span>
+                    Todos os direitos reservados.
+                </span>
+
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <section class="services section" id="servicos">
-      <div class="container">
-        <div class="section-top"><span class="section-number">02</span><span class="section-line"></span><span class="section-tag">NOSSOS SERVIÇOS</span></div>
-        <div class="services-header"><h2>Tudo o que você <span>precisa.</span></h2><p>Confira alguns dos serviços disponíveis na Lan House Center.</p></div>
-        <div class="services-grid">
-          <article class="service-card reveal"><div class="service-top"><span>01</span><i>⌘</i></div><h3>Serviços <span>digitais</span></h3><p>Agendamento de RG, renovação de CNH, INSS, prova de vida, reservista, carteira digital e muito mais.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card featured reveal"><div class="service-top"><span>02</span><i>▤</i></div><h3>Impressões <span>e cópias</span></h3><p>Impressões, cópias, digitalizações, plastificação, currículos, trabalhos e documentos.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card reveal"><div class="service-top"><span>03</span><i>✦</i></div><h3>Artes <span>gráficas</span></h3><p>Panfletos, banners, adesivos, cartões de visita, logotipos, comandas e muito mais.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card reveal"><div class="service-top"><span>04</span><i>◇</i></div><h3>Produtos <span>personalizados</span></h3><p>Canecas, placas Pix, tags, placas decorativas, painéis e diversos outros produtos.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card reveal"><div class="service-top"><span>05</span><i>↗</i></div><h3>Entrada no <span>Seguro-Desemprego</span></h3><p>Auxílio para realizar a entrada no Seguro-Desemprego e orientação durante o processo.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card reveal"><div class="service-top"><span>06</span><i>§</i></div><h3>Contrato de <span>Compra e Venda</span></h3><p>Elaboração e impressão de contrato de compra e venda para diferentes tipos de negociação.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Consultar serviço <b>→</b></a></article>
-          <article class="service-card more-service reveal"><div class="service-top"><span>07</span><i>+</i></div><h3>E muitos <span>outros serviços</span></h3><p>Não encontrou o que procura? Entre em contato com nossa equipe e consulte outras opções.</p><a href="https://wa.me/558497081163" target="_blank" rel="noopener">Falar conosco <b>→</b></a></article>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="hours section" id="horarios">
-      <div class="container">
-        <div class="section-top"><span class="section-number">03</span><span class="section-line"></span><span class="section-tag">HORÁRIOS</span></div>
-        <div class="hours-grid">
-          <div class="hours-intro reveal"><p class="open-indicator"><span></span>ATENDIMENTO PRESENCIAL</p><h2>Quando <span>estamos aqui.</span></h2><p>Escolha o melhor horário para visitar a Lan House Center.</p></div>
-          <div class="schedule reveal" aria-label="Horário de atendimento">
-            <div class="schedule-row"><strong>Segunda-feira</strong><span>07:30 — 17:30</span></div><div class="schedule-row"><strong>Terça-feira</strong><span>07:30 — 17:30</span></div><div class="schedule-row"><strong>Quarta-feira</strong><span>07:30 — 17:30</span></div><div class="schedule-row"><strong>Quinta-feira</strong><span>07:30 — 17:30</span></div><div class="schedule-row"><strong>Sexta-feira</strong><span>07:30 — 16:30</span></div><div class="schedule-row"><strong>Sábado</strong><span>08:00 — 12:00</span></div><div class="schedule-row closed"><strong>Domingo</strong><span>Fechado</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="location section" id="localizacao">
-      <div class="container">
-        <div class="section-top"><span class="section-number">04</span><span class="section-line"></span><span class="section-tag">LOCALIZAÇÃO</span></div>
-        <div class="location-grid">
-          <div class="map-box reveal" aria-label="Lan House Center, Mossoró — RN"><div class="map-pattern" aria-hidden="true"></div><div class="map-content"><span class="map-pin">●</span><strong>Lan House Center</strong><span>Mossoró — RN</span></div></div>
-          <div class="location-content reveal"><h2>Venha nos <span>visitar.</span></h2><p>Estamos localizados no Centro de Mossoró, em um endereço de fácil acesso.</p><div class="address-box"><span class="address-icon">⌖</span><span><small>NOSSO ENDEREÇO</small><strong>Av. Augusto Severo, nº 143</strong><p>Sala 06 — Centro, Mossoró/RN</p></span></div><a href="https://www.google.com/maps/search/?api=1&query=Av.%20Augusto%20Severo%20143%20Mossor%C3%B3%20RN" target="_blank" rel="noopener" class="button button-dark">Abrir no Google Maps <strong>↗</strong></a></div>
-        </div>
-      </div>
-    </section>
+    <!-- =====================================================
+         WHATSAPP
+    ====================================================== -->
 
-    <section class="contact section" id="contato"><div class="container"><div class="contact-box reveal"><div class="contact-content"><p class="contact-label">FALE CONOSCO</p><h2>Precisa de algum serviço?</h2><p>Entre em contato com nossa equipe pelo WhatsApp e tire suas dúvidas.</p></div><a href="https://wa.me/558497081163" target="_blank" rel="noopener" class="contact-button"><span><small>WHATSAPP</small><strong>(84) 9708-1163</strong></span><b>→</b></a></div></div></section>
-  </main>
+    <a
+        href="https://wa.me/558497081163"
+        target="_blank"
+        rel="noopener"
+        class="whatsapp"
+        aria-label="Falar pelo WhatsApp"
+    >
+        <span>✆</span>
+    </a>
 
-  <footer class="footer"><div class="container footer-grid"><div class="footer-brand"><a href="#inicio" class="brand footer-brand-logo" aria-label="Lan House Center — início"><span class="brand-mark" aria-hidden="true"><span class="lh-l">L</span><span class="lh-h">H</span></span><span class="brand-text"><strong>LAN HOUSE</strong><span>CENTER</span></span></a><p>Soluções práticas para facilitar o seu dia a dia.</p></div><div class="footer-column"><h3>Navegação</h3><a href="#inicio">Início</a><a href="#sobre">Sobre nós</a><a href="#servicos">Serviços</a><a href="#horarios">Horários</a></div><div class="footer-column"><h3>Contato</h3><a href="https://wa.me/558497081163" target="_blank" rel="noopener">WhatsApp</a><span>(84) 9708-1163</span><span>Mossoró — RN</span></div></div><div class="footer-bottom"><div class="container"><span>© <span id="year">2026</span> Lan House Center</span><span>Todos os direitos reservados.</span></div></div></footer>
-  <a href="https://wa.me/558497081163" target="_blank" rel="noopener" class="whatsapp" aria-label="Falar pelo WhatsApp"><span>✆</span></a>
-  <script src="script.js"></script>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* HEADER */
+
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 40) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+
+        });
+
+
+        /* MENU MOBILE */
+
+        const menuButton = document.getElementById("menuButton");
+        const nav = document.getElementById("nav");
+
+        menuButton.addEventListener("click", () => {
+
+            nav.classList.toggle("active");
+            menuButton.classList.toggle("active");
+
+        });
+
+
+        document.querySelectorAll(".nav a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                nav.classList.remove("active");
+                menuButton.classList.remove("active");
+
+            });
+
+        });
+
+
+        /* ANIMAÇÕES */
+
+        const animatedElements = document.querySelectorAll(
+            ".service-card, .about-title, .about-text, .hours-intro, .schedule, .map-box, .location-content, .contact-box"
+        );
+
+        const observer = new IntersectionObserver(
+
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+        animatedElements.forEach(element => {
+            observer.observe(element);
+        });
+
+
+        /* ANO */
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
 </body>
+
 </html>
